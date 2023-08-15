@@ -1,6 +1,6 @@
 <template>
   <q-chat-message :text="[text]" :sent="sent" />
-  1
+  2
 </template>
 <script setup lang="ts">
 withDefaults(
