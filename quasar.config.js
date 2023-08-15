@@ -31,11 +31,7 @@ module.exports = configure(function (/* ctx */) {
     boot: ['i18n'],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#css
-    css: [
-      'app.scss',
-      '~vue-ctk-date-time-picker/dist/vue-ctk-date-time-picker.css',
-      '~v-calendar/style.css',
-    ],
+    css: ['app.scss'],
 
     // https://github.com/quasarframework/quasar/tree/dev/extras
     extras: [
@@ -91,7 +87,7 @@ module.exports = configure(function (/* ctx */) {
             // you need to set i18n resource including paths !
             include: path.resolve(__dirname, './src/i18n/**'),
           },
-          'vite-plugin-vue-setup-extend',
+          // 'vite-plugin-vue-setup-extend',
         ],
       ],
     },
@@ -137,7 +133,7 @@ module.exports = configure(function (/* ctx */) {
 
     // animations: 'all', // --- includes all animations
     // https://v2.quasar.dev/options/animations
-    animations: all,
+    animations: 'all',
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#sourcefiles
     // sourceFiles: {
